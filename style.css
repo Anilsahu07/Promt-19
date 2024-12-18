@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    font-family: montserrat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.right i{
+    font-size: 20px;
+}
+
+.mid h1{
+    font-size: 2.5vw;
+    color: white;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+main{
+    background: url(./fashion-2766734_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+    padding: 150px 100px;
+     
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.head h4{
+    font-size: 15px;
+    color: rgb(47, 46, 46);
+    position: relative;
+    padding: 0 10px;
+}
+
+.head h4::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 35px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+.head h1{
+    font-size: 7vw;
+    line-height: 7vw;
+    color: white;
+}
+
+main button{
+    font-family: poppins;
+    color: white;
+    border: none;
+    background-color: black;
+    font-weight: 600;
+    padding: 8px 20px;
+    margin-top: 20px;
+}
+
+main button:hover{
+    background-color: rgb(180, 28, 28);
+    color: rgb(255, 255, 255);
+}
+
+.photos{
+    background-color: black;
+    width: 100%;
+    height: 40vw;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.photos1{
+    flex-basis: 45%;
+}
+
+.photos2{
+    flex-basis: 55%;
+    /* border: 1px solid white; */
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.up{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.image{
+    background: url(jacket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    color: white;
+    font-size: 3vw;
+}
+
+.image:hover{
+    scale: 1.1;
+    transition: 0.5s linear;
+}
+
+.specks{
+    background: url(./specks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+
+    
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.5vw;
+}
+
+.specks:hover{
+    scale: 1.1;
+    transition: 0.5s linear;
+}
+
+.winter{
+    background: url(./blonde-1868701_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.5vw;
+}
+
+.winter:hover{
+    scale: 1.1;
+    transition: 0.5s linear;
+}
+
+.down{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.jackets{
+    background: url(./upper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.5vw;
+}
+
+.jackets:hover{
+    scale: 1.1;
+    transition: 0.5s linear;
+}
+
+.cloths{
+    background: url(./winter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.5vw;
+}
+
+.cloths:hover{
+    scale: 1.1;
+    transition: 0.5s linear;
+}
+
+.lists{
+    display: none;
+}
+
+.lists select{
+    background-color: transparent;
+    padding: 8px 20px;
+    color: white;
+}
+
+select option{
+    color: black;
+    font-size: 8px;
+}
+
+@media (max-width:550px) {
+    .mid{
+        display: none;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .lists{
+        display: block;
+    }
+
+    main{
+        height: 80%;
+    }
+
+    main .head h4{
+        color: rgb(171, 169, 169);
+        font-size: 3vw;
+    }
+
+    .head h1{
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+
+    .photos{
+        flex-direction: column;
+        height: fit-content;
+        padding: 15px 20px;
+    }
+
+    .image{
+        height: 500px;
+    }
+
+    .image h2{
+        font-size: 8vw;
+        color: rgb(230, 224, 224);
+    }
+
+    .up{
+        height: 250px;
+    }
+
+    .specks{
+        font-size: 4vw;
+        color: rgb(255, 253, 253);
+    }
+
+    .winter{
+        font-size: 4vw;
+        color: rgb(247, 244, 244);
+    }
+
+    .down{
+        height: 400px;
+    }
+
+    .jackets{
+        font-size: 4vw;
+        color: rgb(246, 244, 244);
+    }
+
+    .cloths{
+        font-size: 4vw;
+        color: rgb(242, 240, 240);
+        
+    }
+}
