@@ -326,4 +326,10 @@ select option{
         color: rgb(242, 240, 240);
         
     }
+
+    nav .right i:hover{
+        background-color: rgb(80, 78, 78);
+        padding: 6px 6px;
+        border-radius: 30px;
+    }
 }
